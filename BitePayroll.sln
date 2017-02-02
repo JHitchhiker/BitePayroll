@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitePayroll", "BitePayroll\BitePayroll.csproj", "{5E53603A-8466-40BF-AA82-064109AD9A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitePayroll.Data", "BitePayroll.Data\BitePayroll.Data.csproj", "{319BC72F-19CA-4978-9530-9C1911F465A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{5E53603A-8466-40BF-AA82-064109AD9A59}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{319BC72F-19CA-4978-9530-9C1911F465A4}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

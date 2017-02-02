@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BiteConsultingModelStoreContainer" CdmEntityContainer="BiteConsultingEntities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Company1" ColumnName="Company" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Margin" ColumnName="Margin" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contractors">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Contractor">
+        <MappingFragment StoreEntitySet="Contractor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Basic_Rate" ColumnName="Basic Rate" />
+          <ScalarProperty Name="Overtime_Rate" ColumnName="Overtime Rate" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Agency2" ColumnName="Agency2" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Time_sheet_submitted" ColumnName="Time sheet submitted" />
+          <ScalarProperty Name="Payroll" ColumnName="Payroll" />
+          <ScalarProperty Name="Work_Permit" ColumnName="Work Permit" />
+          <ScalarProperty Name="Daily_rate" ColumnName="Daily rate" />
+          <ScalarProperty Name="Hourly_rate" ColumnName="Hourly rate" />
+          <ScalarProperty Name="Standard_margin" ColumnName="Standard margin" />
+          <ScalarProperty Name="overtimeMargin" ColumnName="overtimeMargin" />
+          <ScalarProperty Name="charity" ColumnName="charity" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="Bite_Employee" ColumnName="Bite Employee" />
+          <ScalarProperty Name="Working" ColumnName="Working" />
+          <ScalarProperty Name="selfbilling" ColumnName="selfbilling" />
+          <ScalarProperty Name="VATNUMBER" ColumnName="VATNUMBER" />
+          <ScalarProperty Name="Company_Number" ColumnName="Company Number" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="Address4" ColumnName="Address4" />
+          <ScalarProperty Name="Companyname" ColumnName="Companyname" />
+          <ScalarProperty Name="ContractorTypeID" ColumnName="ContractorTypeID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HolidayPay" ColumnName="HolidayPay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contractor2">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Contractor2">
+        <MappingFragment StoreEntitySet="Contractor2">
+          <ScalarProperty Name="ID1" ColumnName="ID1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Company_Rate" ColumnName="Company Rate" />
+          <ScalarProperty Name="OvertimeRate" ColumnName="OvertimeRate" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Agency_2" ColumnName="Agency 2" />
+          <ScalarProperty Name="Pay_No" ColumnName="Pay No" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="timesheet_submitted" ColumnName="timesheet submitted" />
+          <ScalarProperty Name="Payroll" ColumnName="Payroll" />
+          <ScalarProperty Name="Work_Permit" ColumnName="Work Permit" />
+          <ScalarProperty Name="Daily_rate" ColumnName="Daily rate" />
+          <ScalarProperty Name="Hourly_rate" ColumnName="Hourly rate" />
+          <ScalarProperty Name="Standard_margin" ColumnName="Standard margin" />
+          <ScalarProperty Name="overtime_margine" ColumnName="overtime margine" />
+          <ScalarProperty Name="charity" ColumnName="charity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTemps">
+      <EntityTypeMapping TypeName="BiteConsultingModel.ContractorTemp">
+        <MappingFragment StoreEntitySet="ContractorTemp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Overtime_Rate" ColumnName="Overtime Rate" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Agency2" ColumnName="Agency2" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Time_sheet_submitted" ColumnName="Time sheet submitted" />
+          <ScalarProperty Name="Contract_End" ColumnName="Contract End" />
+          <ScalarProperty Name="Payroll" ColumnName="Payroll" />
+          <ScalarProperty Name="Work_Permit" ColumnName="Work Permit" />
+          <ScalarProperty Name="Daily_Rate" ColumnName="Daily Rate" />
+          <ScalarProperty Name="Hourly_Rate" ColumnName="Hourly Rate" />
+          <ScalarProperty Name="Standard_Margin" ColumnName="Standard Margin" />
+          <ScalarProperty Name="OvertimeMargin" ColumnName="OvertimeMargin" />
+          <ScalarProperty Name="Charity" ColumnName="Charity" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractorTypes">
+      <EntityTypeMapping TypeName="BiteConsultingModel.ContractorType">
+        <MappingFragment StoreEntitySet="ContractorType">
+          <ScalarProperty Name="ContractorTypeID" ColumnName="ContractorTypeID" />
+          <ScalarProperty Name="ContractorType1" ColumnName="ContractorType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GabemReports">
+      <EntityTypeMapping TypeName="BiteConsultingModel.GabemReport">
+        <MappingFragment StoreEntitySet="GabemReport">
+          <ScalarProperty Name="GabemID" ColumnName="GabemID" />
+          <ScalarProperty Name="ContractorID" ColumnName="ContractorID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Hrs1" ColumnName="Hrs1" />
+          <ScalarProperty Name="Rate1" ColumnName="Rate1" />
+          <ScalarProperty Name="Hrs2" ColumnName="Hrs2" />
+          <ScalarProperty Name="Rate2" ColumnName="Rate2" />
+          <ScalarProperty Name="Hrs3" ColumnName="Hrs3" />
+          <ScalarProperty Name="Rate3" ColumnName="Rate3" />
+          <ScalarProperty Name="Hrs4" ColumnName="Hrs4" />
+          <ScalarProperty Name="Rate4" ColumnName="Rate4" />
+          <ScalarProperty Name="Hrs5" ColumnName="Hrs5" />
+          <ScalarProperty Name="Rate5" ColumnName="Rate5" />
+          <ScalarProperty Name="Deductions" ColumnName="Deductions" />
+          <ScalarProperty Name="Expenses" ColumnName="Expenses" />
+          <ScalarProperty Name="Totalhours" ColumnName="Totalhours" />
+          <ScalarProperty Name="Worktotal" ColumnName="Worktotal" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Invoicetotal" ColumnName="Invoicetotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GabemTemps">
+      <EntityTypeMapping TypeName="BiteConsultingModel.GabemTemp">
+        <MappingFragment StoreEntitySet="GabemTemp">
+          <ScalarProperty Name="GabemID" ColumnName="GabemID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="ContractorID" ColumnName="ContractorID" />
+          <ScalarProperty Name="Hours" ColumnName="Hours" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Expenses" ColumnName="Expenses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDMs">
+      <EntityTypeMapping TypeName="BiteConsultingModel.HDM">
+        <MappingFragment StoreEntitySet="HDM">
+          <ScalarProperty Name="HDM1" ColumnName="HDM" />
+          <ScalarProperty Name="ContractorId" ColumnName="ContractorId" />
+          <ScalarProperty Name="Week1" ColumnName="Week1" />
+          <ScalarProperty Name="Week2" ColumnName="Week2" />
+          <ScalarProperty Name="Week3" ColumnName="Week3" />
+          <ScalarProperty Name="Week4" ColumnName="Week4" />
+          <ScalarProperty Name="Week5" ColumnName="Week5" />
+          <ScalarProperty Name="O_Week1" ColumnName="O-Week1" />
+          <ScalarProperty Name="O_Week2" ColumnName="O-Week2" />
+          <ScalarProperty Name="O_Week3" ColumnName="O-Week3" />
+          <ScalarProperty Name="O_Week4" ColumnName="O-Week4" />
+          <ScalarProperty Name="O_Week5" ColumnName="O-Week5" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Week1Rate" ColumnName="Week1Rate" />
+          <ScalarProperty Name="Week2Rate" ColumnName="Week2Rate" />
+          <ScalarProperty Name="Week3Rate" ColumnName="Week3Rate" />
+          <ScalarProperty Name="Week4rate" ColumnName="Week4rate" />
+          <ScalarProperty Name="Week5rate" ColumnName="Week5rate" />
+          <ScalarProperty Name="Oweekrate" ColumnName="Oweekrate" />
+          <ScalarProperty Name="oweek2rate" ColumnName="oweek2rate" />
+          <ScalarProperty Name="oweek3rate" ColumnName="oweek3rate" />
+          <ScalarProperty Name="oweek4rate" ColumnName="oweek4rate" />
+          <ScalarProperty Name="oweek5rate" ColumnName="oweek5rate" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="dailyrate1" ColumnName="dailyrate1" />
+          <ScalarProperty Name="dailyrate2" ColumnName="dailyrate2" />
+          <ScalarProperty Name="dailyrate3" ColumnName="dailyrate3" />
+          <ScalarProperty Name="dailyrate4" ColumnName="dailyrate4" />
+          <ScalarProperty Name="dailyrate5" ColumnName="dailyrate5" />
+          <ScalarProperty Name="hourlyrate1" ColumnName="hourlyrate1" />
+          <ScalarProperty Name="hourlyrate2" ColumnName="hourlyrate2" />
+          <ScalarProperty Name="hourlyrate3" ColumnName="hourlyrate3" />
+          <ScalarProperty Name="hourlyrate4" ColumnName="hourlyrate4" />
+          <ScalarProperty Name="hourlyrate5" ColumnName="hourlyrate5" />
+          <ScalarProperty Name="daysworked" ColumnName="daysworked" />
+          <ScalarProperty Name="hoursworked" ColumnName="hoursworked" />
+          <ScalarProperty Name="Calculate_HDM" ColumnName="Calculate HDM" />
+          <ScalarProperty Name="Overtimeworked" ColumnName="Overtimeworked" />
+          <ScalarProperty Name="ExtraPayment" ColumnName="ExtraPayment" />
+          <ScalarProperty Name="InvoiceNet" ColumnName="InvoiceNet" />
+          <ScalarProperty Name="Charity" ColumnName="Charity" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="C2_Fin" ColumnName="2%Fin" />
+          <ScalarProperty Name="GrossMargin" ColumnName="GrossMargin" />
+          <ScalarProperty Name="Consultmargin" ColumnName="Consultmargin" />
+          <ScalarProperty Name="Overide" ColumnName="Overide" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+          <ScalarProperty Name="Xtramargin" ColumnName="Xtramargin" />
+          <ScalarProperty Name="Holdmargin" ColumnName="Holdmargin" />
+          <ScalarProperty Name="Comments_HDM" ColumnName="Comments-HDM" />
+          <ScalarProperty Name="Calculate_Main" ColumnName="Calculate Main" />
+          <ScalarProperty Name="NIpaid" ColumnName="NIpaid" />
+          <ScalarProperty Name="Total_Expenses" ColumnName="Total Expenses" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="Dividence" ColumnName="Dividence" />
+          <ScalarProperty Name="CorporationTax" ColumnName="CorporationTax" />
+          <ScalarProperty Name="AdminBonus" ColumnName="AdminBonus" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="Subs" ColumnName="Subs" />
+          <ScalarProperty Name="Sub_Repayment" ColumnName="Sub Repayment" />
+          <ScalarProperty Name="Report" ColumnName="Report" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Week1PayRate" ColumnName="Week1PayRate" />
+          <ScalarProperty Name="Week2PayRate" ColumnName="Week2PayRate" />
+          <ScalarProperty Name="Week3PayRate" ColumnName="Week3PayRate" />
+          <ScalarProperty Name="Week4PayRate" ColumnName="Week4PayRate" />
+          <ScalarProperty Name="Week5PayRate" ColumnName="Week5PayRate" />
+          <ScalarProperty Name="C0Week1PayRate" ColumnName="0Week1PayRate" />
+          <ScalarProperty Name="C0Week2PayRate" ColumnName="0Week2PayRate" />
+          <ScalarProperty Name="C0Week3PayRate" ColumnName="0Week3PayRate" />
+          <ScalarProperty Name="C0Week4PayRate" ColumnName="0Week4PayRate" />
+          <ScalarProperty Name="C0Week5PayRate" ColumnName="0Week5PayRate" />
+          <ScalarProperty Name="ClientExpenses" ColumnName="ClientExpenses" />
+          <ScalarProperty Name="BasicPayNew" ColumnName="BasicPayNew" />
+          <ScalarProperty Name="Advance" ColumnName="Advance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceTables">
+      <EntityTypeMapping TypeName="BiteConsultingModel.InvoiceTable">
+        <MappingFragment StoreEntitySet="InvoiceTable">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="ContractorID" ColumnName="ContractorID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="Invoicetotal" ColumnName="Invoicetotal" />
+          <ScalarProperty Name="ClientExpenses" ColumnName="ClientExpenses" />
+          <ScalarProperty Name="DateID" ColumnName="DateID" />
+          <ScalarProperty Name="Ounit" ColumnName="Ounit" />
+          <ScalarProperty Name="Orate" ColumnName="Orate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mainsheets">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Mainsheet">
+        <MappingFragment StoreEntitySet="Mainsheet">
+          <ScalarProperty Name="Mainsheet1" ColumnName="Mainsheet" />
+          <ScalarProperty Name="HdmID" ColumnName="HdmID" />
+          <ScalarProperty Name="H_D_M" ColumnName="H/D/M" />
+          <ScalarProperty Name="Chargeout" ColumnName="Chargeout" />
+          <ScalarProperty Name="O_hours" ColumnName="O-hours" />
+          <ScalarProperty Name="O_rate" ColumnName="O-rate" />
+          <ScalarProperty Name="Extra_Payment" ColumnName="Extra Payment" />
+          <ScalarProperty Name="Invoice_Net" ColumnName="Invoice Net" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="InvoiceTotal" ColumnName="InvoiceTotal" />
+          <ScalarProperty Name="C2_" ColumnName="2%" />
+          <ScalarProperty Name="Margin" ColumnName="Margin" />
+          <ScalarProperty Name="GrossMargin" ColumnName="GrossMargin" />
+          <ScalarProperty Name="ConsultMargin" ColumnName="ConsultMargin" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Contractor" ColumnName="Contractor" />
+          <ScalarProperty Name="Margin_ofCompany" ColumnName="Margin%ofCompany" />
+          <ScalarProperty Name="Charity" ColumnName="Charity" />
+          <ScalarProperty Name="Override" ColumnName="Override" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Month">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="Month_ID" ColumnName="Month-ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthsTables">
+      <EntityTypeMapping TypeName="BiteConsultingModel.MonthsTable">
+        <MappingFragment StoreEntitySet="MonthsTable">
+          <ScalarProperty Name="Monthid" ColumnName="Monthid" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payrolls">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Payroll">
+        <MappingFragment StoreEntitySet="Payroll">
+          <ScalarProperty Name="PayrollId" ColumnName="PayrollId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BiteConsultingModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VatRates">
+      <EntityTypeMapping TypeName="BiteConsultingModel.VatRate">
+        <MappingFragment StoreEntitySet="VatRate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RateName" ColumnName="RateName" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoicetemps">
+      <EntityTypeMapping TypeName="BiteConsultingModel.Invoicetemp">
+        <MappingFragment StoreEntitySet="Invoicetemp">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="ContractorID" ColumnName="ContractorID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="Invoicetotal" ColumnName="Invoicetotal" />
+          <ScalarProperty Name="ClientExpenses" ColumnName="ClientExpenses" />
+          <ScalarProperty Name="DateID" ColumnName="DateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

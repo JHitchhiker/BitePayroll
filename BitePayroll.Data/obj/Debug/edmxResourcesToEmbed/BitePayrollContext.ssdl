@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BiteConsultingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Company" />
+    </Key>
+    <Property Name="Company" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Margin" Type="float" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Contractor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="Basic Rate" Type="float" />
+    <Property Name="Overtime Rate" Type="float" />
+    <Property Name="Company" Type="int" />
+    <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+    <Property Name="Agency2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Number" Type="float" />
+    <Property Name="Info" Type="nvarchar" MaxLength="255" />
+    <Property Name="Time sheet submitted" Type="nvarchar" MaxLength="255" />
+    <Property Name="Payroll" Type="int" />
+    <Property Name="Work Permit" Type="bit" />
+    <Property Name="Daily rate" Type="bit" />
+    <Property Name="Hourly rate" Type="bit" />
+    <Property Name="Standard margin" Type="float" />
+    <Property Name="overtimeMargin" Type="float" />
+    <Property Name="charity" Type="bit" />
+    <Property Name="InvoiceID" Type="float" />
+    <Property Name="Bite Employee" Type="bit" />
+    <Property Name="Working" Type="bit" />
+    <Property Name="selfbilling" Type="bit" />
+    <Property Name="VATNUMBER" Type="float" />
+    <Property Name="Company Number" Type="int" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address4" Type="nvarchar" MaxLength="50" />
+    <Property Name="Companyname" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContractorTypeID" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="HolidayPay" Type="float" />
+  </EntityType>
+  <EntityType Name="Contractor2">
+    <Key>
+      <PropertyRef Name="ID1" />
+    </Key>
+    <Property Name="ID1" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Company Rate" Type="float" />
+    <Property Name="OvertimeRate" Type="float" />
+    <Property Name="Company" Type="float" />
+    <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+    <Property Name="Agency 2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Pay No" Type="float" />
+    <Property Name="Info" Type="nvarchar" MaxLength="255" />
+    <Property Name="timesheet submitted" Type="nvarchar" MaxLength="255" />
+    <Property Name="Payroll" Type="float" />
+    <Property Name="Work Permit" Type="bit" />
+    <Property Name="Daily rate" Type="bit" />
+    <Property Name="Hourly rate" Type="bit" />
+    <Property Name="Standard margin" Type="float" />
+    <Property Name="overtime margine" Type="float" />
+    <Property Name="charity" Type="bit" />
+  </EntityType>
+  <EntityType Name="ContractorTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="Overtime Rate" Type="float" />
+    <Property Name="Company" Type="int" />
+    <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+    <Property Name="Agency2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Number" Type="float" />
+    <Property Name="Info" Type="nvarchar" MaxLength="255" />
+    <Property Name="Time sheet submitted" Type="nvarchar" MaxLength="255" />
+    <Property Name="Contract End" Type="nvarchar" MaxLength="255" />
+    <Property Name="Payroll" Type="int" />
+    <Property Name="Work Permit" Type="bit" />
+    <Property Name="Daily Rate" Type="bit" />
+    <Property Name="Hourly Rate" Type="bit" />
+    <Property Name="Standard Margin" Type="float" />
+    <Property Name="OvertimeMargin" Type="float" />
+    <Property Name="Charity" Type="bit" />
+    <Property Name="InvoiceID" Type="int" />
+  </EntityType>
+  <EntityType Name="ContractorType">
+    <Key>
+      <PropertyRef Name="ContractorTypeID" />
+    </Key>
+    <Property Name="ContractorTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContractorType" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="GabemReport">
+    <Key>
+      <PropertyRef Name="GabemID" />
+      <PropertyRef Name="ContractorID" />
+    </Key>
+    <Property Name="GabemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContractorID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="Hrs1" Type="float" />
+    <Property Name="Rate1" Type="float" />
+    <Property Name="Hrs2" Type="float" />
+    <Property Name="Rate2" Type="float" />
+    <Property Name="Hrs3" Type="float" />
+    <Property Name="Rate3" Type="float" />
+    <Property Name="Hrs4" Type="float" />
+    <Property Name="Rate4" Type="float" />
+    <Property Name="Hrs5" Type="float" />
+    <Property Name="Rate5" Type="float" />
+    <Property Name="Deductions" Type="float" />
+    <Property Name="Expenses" Type="float" />
+    <Property Name="Totalhours" Type="float" />
+    <Property Name="Worktotal" Type="float" />
+    <Property Name="VAT" Type="float" />
+    <Property Name="Invoicetotal" Type="float" />
+  </EntityType>
+  <EntityType Name="GabemTemp">
+    <Key>
+      <PropertyRef Name="GabemID" />
+    </Key>
+    <Property Name="GabemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Number" Type="int" />
+    <Property Name="ContractorID" Type="int" />
+    <Property Name="Hours" Type="float" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="Expenses" Type="float" />
+  </EntityType>
+  <EntityType Name="HDM">
+    <Key>
+      <PropertyRef Name="HDM" />
+    </Key>
+    <Property Name="HDM" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContractorId" Type="int" />
+    <Property Name="Week1" Type="float" />
+    <Property Name="Week2" Type="float" />
+    <Property Name="Week3" Type="float" />
+    <Property Name="Week4" Type="float" />
+    <Property Name="Week5" Type="float" />
+    <Property Name="O-Week1" Type="float" />
+    <Property Name="O-Week2" Type="float" />
+    <Property Name="O-Week3" Type="float" />
+    <Property Name="O-Week4" Type="float" />
+    <Property Name="O-Week5" Type="float" />
+    <Property Name="Month" Type="int" />
+    <Property Name="Week1Rate" Type="float" />
+    <Property Name="Week2Rate" Type="float" />
+    <Property Name="Week3Rate" Type="float" />
+    <Property Name="Week4rate" Type="float" />
+    <Property Name="Week5rate" Type="float" />
+    <Property Name="Oweekrate" Type="float" />
+    <Property Name="oweek2rate" Type="float" />
+    <Property Name="oweek3rate" Type="float" />
+    <Property Name="oweek4rate" Type="float" />
+    <Property Name="oweek5rate" Type="float" />
+    <Property Name="Total" Type="float" />
+    <Property Name="dailyrate1" Type="bit" />
+    <Property Name="dailyrate2" Type="bit" />
+    <Property Name="dailyrate3" Type="bit" />
+    <Property Name="dailyrate4" Type="bit" />
+    <Property Name="dailyrate5" Type="bit" />
+    <Property Name="hourlyrate1" Type="bit" />
+    <Property Name="hourlyrate2" Type="bit" />
+    <Property Name="hourlyrate3" Type="bit" />
+    <Property Name="hourlyrate4" Type="bit" />
+    <Property Name="hourlyrate5" Type="bit" />
+    <Property Name="daysworked" Type="float" />
+    <Property Name="hoursworked" Type="float" />
+    <Property Name="Calculate HDM" Type="bit" />
+    <Property Name="Overtimeworked" Type="float" />
+    <Property Name="ExtraPayment" Type="float" />
+    <Property Name="InvoiceNet" Type="float" />
+    <Property Name="Charity" Type="bit" />
+    <Property Name="Vat" Type="float" />
+    <Property Name="2%Fin" Type="float" />
+    <Property Name="GrossMargin" Type="float" />
+    <Property Name="Consultmargin" Type="float" />
+    <Property Name="Overide" Type="bit" />
+    <Property Name="Info" Type="nvarchar" MaxLength="70" />
+    <Property Name="Xtramargin" Type="float" />
+    <Property Name="Holdmargin" Type="float" />
+    <Property Name="Comments-HDM" Type="nvarchar" MaxLength="50" />
+    <Property Name="Calculate Main" Type="bit" />
+    <Property Name="NIpaid" Type="float" />
+    <Property Name="Total Expenses" Type="float" />
+    <Property Name="BasicPay" Type="float" />
+    <Property Name="Dividence" Type="float" />
+    <Property Name="CorporationTax" Type="float" />
+    <Property Name="AdminBonus" Type="float" />
+    <Property Name="Bonus" Type="float" />
+    <Property Name="Subs" Type="int" />
+    <Property Name="Sub Repayment" Type="int" />
+    <Property Name="Report" Type="bit" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Week1PayRate" Type="float" />
+    <Property Name="Week2PayRate" Type="float" />
+    <Property Name="Week3PayRate" Type="float" />
+    <Property Name="Week4PayRate" Type="float" />
+    <Property Name="Week5PayRate" Type="float" />
+    <Property Name="0Week1PayRate" Type="float" />
+    <Property Name="0Week2PayRate" Type="float" />
+    <Property Name="0Week3PayRate" Type="float" />
+    <Property Name="0Week4PayRate" Type="float" />
+    <Property Name="0Week5PayRate" Type="float" />
+    <Property Name="ClientExpenses" Type="float" />
+    <Property Name="BasicPayNew" Type="float" />
+    <Property Name="Advance" Type="float" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoiced" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="InvoiceTable">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContractorID" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Unit" Type="float" />
+    <Property Name="Rate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="Vat" Type="float" />
+    <Property Name="Invoicetotal" Type="float" />
+    <Property Name="ClientExpenses" Type="float" />
+    <Property Name="DateID" Type="int" />
+    <Property Name="Ounit" Type="int" />
+    <Property Name="Orate" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BiteConsulting.dbo.Invoicetemp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Invoicetemp">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContractorID" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Unit" Type="float" />
+    <Property Name="Rate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="Vat" Type="float" />
+    <Property Name="Invoicetotal" Type="float" />
+    <Property Name="ClientExpenses" Type="float" />
+    <Property Name="DateID" Type="int" />
+  </EntityType>
+  <EntityType Name="Mainsheet">
+    <Key>
+      <PropertyRef Name="Mainsheet" />
+    </Key>
+    <Property Name="Mainsheet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HdmID" Type="int" />
+    <Property Name="H/D/M" Type="float" />
+    <Property Name="Chargeout" Type="float" />
+    <Property Name="O-hours" Type="float" />
+    <Property Name="O-rate" Type="float" />
+    <Property Name="Extra Payment" Type="float" />
+    <Property Name="Invoice Net" Type="float" />
+    <Property Name="Vat" Type="float" />
+    <Property Name="InvoiceTotal" Type="float" />
+    <Property Name="2%" Type="float" />
+    <Property Name="Margin" Type="float" />
+    <Property Name="GrossMargin" Type="float" />
+    <Property Name="ConsultMargin" Type="float" />
+    <Property Name="Month" Type="int" />
+    <Property Name="Contractor" Type="int" />
+    <Property Name="Margin%ofCompany" Type="int" />
+    <Property Name="Charity" Type="bit" />
+    <Property Name="Override" Type="bit" />
+  </EntityType>
+  <EntityType Name="Months">
+    <Key>
+      <PropertyRef Name="Month-ID" />
+    </Key>
+    <Property Name="Month-ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Year" Type="int" />
+  </EntityType>
+  <EntityType Name="MonthsTable">
+    <Key>
+      <PropertyRef Name="Monthid" />
+    </Key>
+    <Property Name="Monthid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Payroll">
+    <Key>
+      <PropertyRef Name="PayrollId" />
+    </Key>
+    <Property Name="PayrollId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="VatRate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RateName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rate" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_Contractor_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Company" />
+      </Principal>
+      <Dependent Role="Contractor">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contractor_ContractorType">
+    <End Role="ContractorType" Type="Self.ContractorType" Multiplicity="0..1" />
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractorType">
+        <PropertyRef Name="ContractorTypeID" />
+      </Principal>
+      <Dependent Role="Contractor">
+        <PropertyRef Name="ContractorTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contractor_Payroll">
+    <End Role="Payroll" Type="Self.Payroll" Multiplicity="0..1" />
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payroll">
+        <PropertyRef Name="PayrollId" />
+      </Principal>
+      <Dependent Role="Contractor">
+        <PropertyRef Name="Payroll" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HDM_Contractor">
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="0..1" />
+    <End Role="HDM" Type="Self.HDM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="HDM">
+        <PropertyRef Name="ContractorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HDM_Months">
+    <End Role="Months" Type="Self.Months" Multiplicity="0..1" />
+    <End Role="HDM" Type="Self.HDM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Months">
+        <PropertyRef Name="Month-ID" />
+      </Principal>
+      <Dependent Role="HDM">
+        <PropertyRef Name="Month" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceTable_Contractor">
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="0..1" />
+    <End Role="InvoiceTable" Type="Self.InvoiceTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="InvoiceTable">
+        <PropertyRef Name="ContractorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InvoiceTable_Months">
+    <End Role="Months" Type="Self.Months" Multiplicity="0..1" />
+    <End Role="InvoiceTable" Type="Self.InvoiceTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Months">
+        <PropertyRef Name="Month-ID" />
+      </Principal>
+      <Dependent Role="InvoiceTable">
+        <PropertyRef Name="DateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mainsheet_Contractor">
+    <End Role="Contractor" Type="Self.Contractor" Multiplicity="0..1" />
+    <End Role="Mainsheet" Type="Self.Mainsheet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contractor">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Mainsheet">
+        <PropertyRef Name="Contractor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Mainsheet_HDM">
+    <End Role="HDM" Type="Self.HDM" Multiplicity="0..1" />
+    <End Role="Mainsheet" Type="Self.Mainsheet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDM">
+        <PropertyRef Name="HDM" />
+      </Principal>
+      <Dependent Role="Mainsheet">
+        <PropertyRef Name="HdmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BiteConsultingModelStoreContainer">
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contractor" EntityType="Self.Contractor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contractor2" EntityType="Self.Contractor2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContractorTemp" EntityType="Self.ContractorTemp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContractorType" EntityType="Self.ContractorType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GabemReport" EntityType="Self.GabemReport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GabemTemp" EntityType="Self.GabemTemp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HDM" EntityType="Self.HDM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InvoiceTable" EntityType="Self.InvoiceTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mainsheet" EntityType="Self.Mainsheet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Months" EntityType="Self.Months" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonthsTable" EntityType="Self.MonthsTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payroll" EntityType="Self.Payroll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VatRate" EntityType="Self.VatRate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoicetemp" EntityType="Self.Invoicetemp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Invoicetemp].[InvoiceID] AS [InvoiceID], 
+    [Invoicetemp].[ContractorID] AS [ContractorID], 
+    [Invoicetemp].[Date] AS [Date], 
+    [Invoicetemp].[Unit] AS [Unit], 
+    [Invoicetemp].[Rate] AS [Rate], 
+    [Invoicetemp].[Amount] AS [Amount], 
+    [Invoicetemp].[Vat] AS [Vat], 
+    [Invoicetemp].[Invoicetotal] AS [Invoicetotal], 
+    [Invoicetemp].[ClientExpenses] AS [ClientExpenses], 
+    [Invoicetemp].[DateID] AS [DateID]
+    FROM [dbo].[Invoicetemp] AS [Invoicetemp]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Contractor_Company" Association="Self.FK_Contractor_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Contractor" EntitySet="Contractor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contractor_ContractorType" Association="Self.FK_Contractor_ContractorType">
+      <End Role="ContractorType" EntitySet="ContractorType" />
+      <End Role="Contractor" EntitySet="Contractor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contractor_Payroll" Association="Self.FK_Contractor_Payroll">
+      <End Role="Payroll" EntitySet="Payroll" />
+      <End Role="Contractor" EntitySet="Contractor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HDM_Contractor" Association="Self.FK_HDM_Contractor">
+      <End Role="Contractor" EntitySet="Contractor" />
+      <End Role="HDM" EntitySet="HDM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HDM_Months" Association="Self.FK_HDM_Months">
+      <End Role="Months" EntitySet="Months" />
+      <End Role="HDM" EntitySet="HDM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceTable_Contractor" Association="Self.FK_InvoiceTable_Contractor">
+      <End Role="Contractor" EntitySet="Contractor" />
+      <End Role="InvoiceTable" EntitySet="InvoiceTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InvoiceTable_Months" Association="Self.FK_InvoiceTable_Months">
+      <End Role="Months" EntitySet="Months" />
+      <End Role="InvoiceTable" EntitySet="InvoiceTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mainsheet_Contractor" Association="Self.FK_Mainsheet_Contractor">
+      <End Role="Contractor" EntitySet="Contractor" />
+      <End Role="Mainsheet" EntitySet="Mainsheet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Mainsheet_HDM" Association="Self.FK_Mainsheet_HDM">
+      <End Role="HDM" EntitySet="HDM" />
+      <End Role="Mainsheet" EntitySet="Mainsheet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
