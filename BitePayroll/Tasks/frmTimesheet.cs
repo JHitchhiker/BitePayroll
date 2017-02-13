@@ -241,19 +241,19 @@ namespace BitePayroll
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             var total = 0.00;
-            var worked = 0;
+            var worked = 0.00;
             var overtime = 0.00;
-            worked += txtWeek1.ToInt();
-            worked += txtWeek2.ToInt();
-            worked += txtWeek3.ToInt();
-            worked += txtWeek4.ToInt();
-            worked += txtWeek5.ToInt();
+            worked += txtWeek1.ToDouble();
+            worked += txtWeek2.ToDouble();
+            worked += txtWeek3.ToDouble();
+            worked += txtWeek4.ToDouble();
+            worked += txtWeek5.ToDouble();
 
-            overtime += txtOWeek1.ToInt();
-            overtime += txtOWeek2.ToInt();
-            overtime += txtOWeek3.ToInt();
-            overtime += txtOWeek4.ToInt();
-            overtime += txtOWeek5.ToInt();
+            overtime += txtOWeek1.ToDouble();
+            overtime += txtOWeek2.ToDouble();
+            overtime += txtOWeek3.ToDouble();
+            overtime += txtOWeek4.ToDouble();
+            overtime += txtOWeek5.ToDouble();
 
             total += txtWeek1.ToDouble() * txtWeek1Rate.ToDouble();
             total += txtWeek2.ToDouble() * txtWeek2Rate.ToDouble();

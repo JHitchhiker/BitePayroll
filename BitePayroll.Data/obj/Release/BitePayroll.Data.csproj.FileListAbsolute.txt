@@ -8,3 +8,13 @@ D:\Dev\BitePayroll\BitePayroll\BitePayroll.Data\bin\Release\EntityFramework.SqlS
 D:\Dev\BitePayroll\BitePayroll\BitePayroll.Data\obj\Release\BitePayroll.Data.dll
 D:\Dev\BitePayroll\BitePayroll\BitePayroll.Data\obj\Release\BitePayroll.Data.pdb
 D:\Dev\BitePayroll\BitePayroll\BitePayroll.Data\obj\Release\BitePayroll.Data.csprojResolveAssemblyReference.cache
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\BitePayroll.Data.dll.config
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\BitePayroll.Data.dll
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\BitePayroll.Data.pdb
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\EntityFramework.dll
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\EntityFramework.xml
+D:\Dev\AccessRebuild\BitePayroll.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\Dev\AccessRebuild\BitePayroll.Data\obj\Release\BitePayroll.Data.csprojResolveAssemblyReference.cache
+D:\Dev\AccessRebuild\BitePayroll.Data\obj\Release\BitePayroll.Data.dll
+D:\Dev\AccessRebuild\BitePayroll.Data\obj\Release\BitePayroll.Data.pdb
