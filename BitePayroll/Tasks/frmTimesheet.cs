@@ -97,12 +97,19 @@ namespace BitePayroll
 
         private void PrepareContractor()
         {
-            ViewRepository repo = new ViewRepository();
-            var total = repo.ContractorTotalHours()
-                            .Where(s => s.Id == Convert.ToInt16(comboBox1.SelectedValue))
-                            .FirstOrDefault().Total;
-            txtTotalHoursWorked.Text = total.ToString();
 
+            ViewRepository repo = new ViewRepository();
+            try
+            {
+                var total = repo.ContractorTotalHours()
+                                .Where(s => s.Id == Convert.ToInt16(comboBox1.SelectedValue))
+                                .FirstOrDefault().Total;
+                txtTotalHoursWorked.Text = total.ToString();
+            }
+            catch
+            {
+                txtTotalHoursWorked.Text = "0";
+            }
 
             var items = repo.ContractTimeSheetMonths()
                             .Where(s => s.ContractorId == Convert.ToInt16(comboBox1.SelectedValue)).ToList();
