@@ -38,8 +38,8 @@ namespace BitePayroll
             dataGridView1.Columns[3].Visible = false;
 
 
-            dataGridView1.Columns[4].DefaultCellStyle.Format = "#,#0";
-            dataGridView1.Columns[6].DefaultCellStyle.Format = "#,#0";
+            dataGridView1.Columns[4].DefaultCellStyle.Format = "#,#0.00";
+            dataGridView1.Columns[6].DefaultCellStyle.Format = "#,#0.00";
             dataGridView1.Columns[5].DefaultCellStyle.Format = "#,#0.00";
             dataGridView1.Columns[7].DefaultCellStyle.Format = "#,#0.00";
             for (int i = 11; i < 17; i++)
